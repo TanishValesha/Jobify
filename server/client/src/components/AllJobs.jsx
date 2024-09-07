@@ -15,7 +15,7 @@ const AllJobs = () => {
     const response = await axios.get(
       `${baseURL}/jobs`,
       {
-        params: { jobStatus, type, sortType },
+        params: { jobStatus, type },
         headers: {
           Authorization: `Bearer ${token}`, // Include token in headers
         },
@@ -38,6 +38,7 @@ const AllJobs = () => {
     //   Object.values(jobData).map((item, index) => {
     //     console.log(item);
     //   });
+    console.log(Object.values(jobData).length);
     setJobs(Object.values(jobData));
   };
   useEffect(() => {

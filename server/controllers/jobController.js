@@ -6,23 +6,23 @@ const customError = require("../errors/customError");
 
 exports.getAllJob = async (req, res) => {
   const { jobStatus, type, sortType } = req.query;
-  console.log(req.query);
+  // console.log(req.query);
 
-  let sortOrder = "";
+  // let sortOrder = "";
 
   let queryObj = {
     createdBy: req.user.userId,
   };
 
-  if (sortType === "newest") {
-    sortOrder = "-createdAt";
-  } else if (sortType === "oldest") {
-    sortOrder = "createdAt";
-  } else if (sortType === "a-z") {
-    sortOrder = "position";
-  } else if (sortType === "z-a") {
-    sortOrder = "-position";
-  }
+  // if (sortType === "newest") {
+  //   sortOrder = "-createdAt";
+  // } else if (sortType === "oldest") {
+  //   sortOrder = "createdAt";
+  // } else if (sortType === "a-z") {
+  //   sortOrder = "position";
+  // } else if (sortType === "z-a") {
+  //   sortOrder = "-position";
+  // }
 
   if (jobStatus && jobStatus !== "all") {
     queryObj.jobStatus = jobStatus;
@@ -30,7 +30,7 @@ exports.getAllJob = async (req, res) => {
   if (type && type !== "all") {
     queryObj.jobType = type;
   }
-  const jobList = await Job.find(queryObj).sort(sortOrder);
+  const jobList = await Job.find(queryObj).sort("createdAt");
 
   if (!jobList) {
     throw new customError.NotFoundError("No Jobs Listed");

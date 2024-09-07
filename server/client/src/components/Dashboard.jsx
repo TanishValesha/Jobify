@@ -35,11 +35,7 @@ const Dashboard = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-start rtl:justify-end">
               <Link to="/dashboard" className="flex ms-2 md:me-24">
-                <img
-                  src="./public/logo.jpg"
-                  className="h-8 me-3"
-                  alt="Jobify Logo"
-                />
+                <img src="logo.jpg" className="h-8 me-3" alt="Jobify Logo" />
                 <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
                   Jobify
                 </span>
