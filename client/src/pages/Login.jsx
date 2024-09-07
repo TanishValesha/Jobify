@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { store } from "../../app/store";
 import { setUser } from "../features/users/userSlice";
-const baseURL = "https://jobify-t777.onrender.com/";
+const baseURL = "https://jobify-t777.onrender.com";
 
 export const loginFormAction = async ({ request }) => {
   try {
