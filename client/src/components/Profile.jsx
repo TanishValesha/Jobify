@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import { store } from "../../app/store";
 import { clearUser, setUser } from "../features/users/userSlice";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://jobify-t777.onrender.com";
 
 const Profile = () => {
   const user = useSelector((state) => state.user.user);
