@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import StatCard from "./StatCard";
 import axios from "axios";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://jobify-t777.onrender.com";
 
 const Stats = () => {
   const [pending, setPending] = useState(0);
