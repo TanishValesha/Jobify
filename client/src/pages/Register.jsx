@@ -3,7 +3,7 @@ import { Form, redirect, useNavigation } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://jobify-t777.onrender.com";
 
 export const registerFormAction = async ({ request }) => {
   try {
