@@ -3,7 +3,7 @@ import { Form } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://jobify-t777.onrender.com";
 
 const AllJobs = () => {
   const [jobStatus, setJobStatus] = useState("all");
