@@ -5,7 +5,7 @@ import { Form, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import dayjs from "dayjs";
 
-const baseURL = "http://localhost:3000";
+const baseURL = "https://jobify-t777.onrender.com";
 
 const EditJob = () => {
   const timestamp = Date.now();
