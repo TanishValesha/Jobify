@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-const base_URL = "http://localhost:3000";
+const base_URL = "https://jobify-t777.onrender.com";
 
 const Dashboard = () => {
   let user = useSelector((state) => state.user.user);
